@@ -1,0 +1,241 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="YGsJpCqufxgFFDIX2PRU">
+    <mxGraphModel dx="2002" dy="1380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool1" parent="1" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=40;horizontal=0;horizontalFlip=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=Times New Roman;fontSize=12;fontStyle=1;" value="Portal Fake - Processo de Desenvolvimento Colaborativo com GitFlow." vertex="1">
+          <mxGeometry height="880" width="1600" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_lt" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=10;fontStyle=1;" value="LÍDER TÉCNICO" vertex="1">
+          <mxGeometry height="220" width="1560" x="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start_evt" parent="lane_lt" style="ellipse;shape=bpmnEvent;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="Processo&#xa;Iniciado" vertex="1">
+          <mxGeometry height="40" width="40" x="30" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_1" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Criar&#xa;repositório no GitHub" vertex="1">
+          <mxGeometry height="50" width="90" x="100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_2" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Criar&#xa;a branch develop" vertex="1">
+          <mxGeometry height="50" width="90" x="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_3" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Adicionar&#xa;os integrantes da equipe" vertex="1">
+          <mxGeometry height="50" width="100" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_4" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Compartilhar&#xa;o link do repositório" vertex="1">
+          <mxGeometry height="50" width="90" x="440" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_fork" parent="lane_lt" style="rhombus;shape=bpmnGateway;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="560" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_fork_symbol" parent="gw_fork" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontFamily=Times New Roman;fontColor=#666666;" value="+" vertex="1">
+          <mxGeometry height="40" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_gw_fork" parent="lane_lt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=8;fontColor=#555555;" value="Abertura das atividades&#xa;em paralelo." vertex="1">
+          <mxGeometry height="30" width="100" x="530" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_join" parent="lane_lt" style="rhombus;shape=bpmnGateway;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="1060" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_join_symbol" parent="gw_join" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontFamily=Times New Roman;fontColor=#666666;" value="+" vertex="1">
+          <mxGeometry height="40" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_gw_join" parent="lane_lt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=8;fontColor=#555555;" value="Fechamento das atividades&#xa;em paralelo." vertex="1">
+          <mxGeometry height="30" width="110" x="1025" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_rev" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Revisar&#xa;os Pull Requests" vertex="1">
+          <mxGeometry height="50" width="85" x="1130" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_val" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Validar&#xa;os módulos&#xa;desenvolvidos" vertex="1">
+          <mxGeometry height="50" width="85" x="1230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_test" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Testar&#xa;a integração&#xa;entre os módulos" vertex="1">
+          <mxGeometry height="50" width="85" x="1330" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_merge_dev" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Realizar o Merge&#xa;para a branch develop" vertex="1">
+          <mxGeometry height="50" width="95" x="1430" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_xor" parent="lane_lt" style="rhombus;shape=bpmnGateway;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="Sistema&#xa;aprovado?" vertex="1">
+          <mxGeometry height="45" width="45" x="1455" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_fix" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Solicitar&#xa;correções nas&#xa;branches feature" vertex="1">
+          <mxGeometry height="45" width="95" x="800" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="task_lt_main" parent="lane_lt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;" value="Realizar o Merge&#xa;para a branch main" vertex="1">
+          <mxGeometry height="45" width="95" x="1320" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="end_evt" parent="lane_lt" style="ellipse;shape=bpmnEvent;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;fontFamily=Times New Roman;fontSize=8;" value="Sistema&#xa;Entregue" vertex="1">
+          <mxGeometry height="40" width="40" x="1240" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_cad" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=10;fontStyle=1;" value="DESENVOLVEDOR DE CADASTRO" vertex="1">
+          <mxGeometry height="220" width="1560" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_1" parent="lane_cad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Clonar o&#xa;repositório" vertex="1">
+          <mxGeometry height="50" width="70" x="610" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_2" parent="lane_cad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Criar a branch&#xa;feature/cadastro" vertex="1">
+          <mxGeometry height="50" width="75" x="695" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_3" parent="lane_cad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Desenvolver a&#xa;automação de cadastro" vertex="1">
+          <mxGeometry height="50" width="90" x="785" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_4" parent="lane_cad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar&#xa;Commit" vertex="1">
+          <mxGeometry height="50" width="60" x="890" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_5" parent="lane_cad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar&#xa;Push" vertex="1">
+          <mxGeometry height="50" width="60" x="965" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_6" parent="lane_cad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Abrir&#xa;Pull Request" vertex="1">
+          <mxGeometry height="50" width="65" x="1040" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_con" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=10;fontStyle=1;" value="DESENVOLVEDOR DE CONSULTA" vertex="1">
+          <mxGeometry height="220" width="1560" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_1" parent="lane_con" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Clonar o&#xa;repositório" vertex="1">
+          <mxGeometry height="50" width="70" x="610" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_2" parent="lane_con" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Criar a branch&#xa;feature/consulta" vertex="1">
+          <mxGeometry height="50" width="75" x="695" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_3" parent="lane_con" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Desenvolver a&#xa;automação de consulta" vertex="1">
+          <mxGeometry height="50" width="90" x="785" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_4" parent="lane_con" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar&#xa;Commit" vertex="1">
+          <mxGeometry height="50" width="60" x="890" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_5" parent="lane_con" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar&#xa;Push" vertex="1">
+          <mxGeometry height="50" width="60" x="965" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_6" parent="lane_con" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Abrir&#xa;Pull Request" vertex="1">
+          <mxGeometry height="50" width="65" x="1040" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_exp" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=10;fontStyle=1;" value="DESENVOLVEDOR DE EXPORTAÇÃO" vertex="1">
+          <mxGeometry height="220" width="1560" x="40" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="t_exp_1" parent="lane_exp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Clonar o&#xa;repositório" vertex="1">
+          <mxGeometry height="50" width="70" x="610" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_exp_2" parent="lane_exp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Criar a branch&#xa;feature/exportacao" vertex="1">
+          <mxGeometry height="50" width="75" x="695" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_exp_3" parent="lane_exp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Desenvolver a&#xa;automação de exportação" vertex="1">
+          <mxGeometry height="50" width="90" x="785" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_exp_4" parent="lane_exp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar&#xa;Commit" vertex="1">
+          <mxGeometry height="50" width="60" x="890" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_exp_5" parent="lane_exp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar&#xa;Push" vertex="1">
+          <mxGeometry height="50" width="60" x="965" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_exp_6" parent="lane_exp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Abrir&#xa;Pull Request" vertex="1">
+          <mxGeometry height="50" width="65" x="1040" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="pool1" source="start_evt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="pool1" source="task_lt_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="pool1" source="task_lt_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow4" edge="1" parent="pool1" source="task_lt_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow5" edge="1" parent="pool1" source="task_lt_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="gw_fork">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_fork_cad" edge="1" parent="pool1" source="gw_fork" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_cad_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_fork_con" edge="1" parent="pool1" source="gw_fork" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_con_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_fork_exp" edge="1" parent="pool1" source="gw_fork" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_exp_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_c1" edge="1" parent="pool1" source="t_cad_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_cad_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_c2" edge="1" parent="pool1" source="t_cad_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_cad_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_c3" edge="1" parent="pool1" source="t_cad_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_cad_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_c4" edge="1" parent="pool1" source="t_cad_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_cad_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_c5" edge="1" parent="pool1" source="t_cad_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_cad_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_c6" edge="1" parent="pool1" source="t_cad_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="gw_join">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_q1" edge="1" parent="pool1" source="t_con_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_con_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_q2" edge="1" parent="pool1" source="t_con_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_con_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_q3" edge="1" parent="pool1" source="t_con_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_con_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_q4" edge="1" parent="pool1" source="t_con_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_con_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_q5" edge="1" parent="pool1" source="t_con_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_con_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_q6" edge="1" parent="pool1" source="t_con_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="gw_join">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_e1" edge="1" parent="pool1" source="t_exp_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_exp_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_e2" edge="1" parent="pool1" source="t_exp_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_exp_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_e3" edge="1" parent="pool1" source="t_exp_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_exp_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_e4" edge="1" parent="pool1" source="t_exp_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_exp_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_e5" edge="1" parent="pool1" source="t_exp_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="t_exp_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_e6" edge="1" parent="pool1" source="t_exp_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="gw_join">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_join_rev" edge="1" parent="pool1" source="gw_join" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_rev">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_rev_val" edge="1" parent="pool1" source="task_lt_rev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_val">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_val_test" edge="1" parent="pool1" source="task_lt_val" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_test">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_test_mdev" edge="1" parent="pool1" source="task_lt_test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="task_lt_merge_dev">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_mdev_xor" edge="1" parent="pool1" source="task_lt_merge_dev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="gw_xor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_xor_sim" edge="1" parent="pool1" source="gw_xor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;fontStyle=1;" target="task_lt_main" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_main_end" edge="1" parent="pool1" source="task_lt_main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" target="end_evt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_xor_nao" edge="1" parent="pool1" source="gw_xor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;fontFamily=Times New Roman;fontSize=8;fontStyle=1;" target="task_lt_fix" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_fix_fork" edge="1" parent="pool1" source="task_lt_fix" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" target="gw_fork">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
