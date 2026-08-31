@@ -1,0 +1,271 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="txWuDA9yHt346flC01Z6">
+    <mxGraphModel dx="2705" dy="2038" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool1" parent="1" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=40;horizontal=0;horizontalFlip=0;fillColor=#f5f5f5;fontColor=#003366;strokeColor=#666666;fontFamily=Times New Roman;fontSize=18;fontStyle=1;" value="Portal Fake Soluções Digitais" vertex="1">
+          <mxGeometry height="1100" width="1700" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=16;fontStyle=1;" value="Atendimento" vertex="1">
+          <mxGeometry height="220" width="1660" x="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start1" parent="lane1" style="ellipse;shape=bpmnEvent;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="Receber solicitação&#xa;por e-mail" vertex="1">
+          <mxGeometry height="40" width="40" x="30" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="t_at1" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Abrir e-mail" vertex="1">
+          <mxGeometry height="50" width="80" x="100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_at2" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Conferir&#xa;documentos" vertex="1">
+          <mxGeometry height="50" width="85" x="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_at" parent="lane1" style="rhombus;shape=bpmnGateway;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="Documentação&#xa;completa?" vertex="1">
+          <mxGeometry height="50" width="50" x="325" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_at_fail" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Times New Roman;fontSize=8;" value="Solicitar documentos&#xa;faltantes ao cliente" vertex="1">
+          <mxGeometry height="45" width="100" x="300" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="end_at" parent="lane1" style="ellipse;shape=bpmnEvent;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;fontFamily=Times New Roman;fontSize=8;" value="Encerrar&#xa;solicitação" vertex="1">
+          <mxGeometry height="35" width="35" x="430" y="12" as="geometry" />
+        </mxCell>
+        <mxCell id="t_at_ok" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Organizar&#xa;documentos" vertex="1">
+          <mxGeometry height="50" width="85" x="410" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_at_fwd" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Encaminhar para&#xa;Organização" vertex="1">
+          <mxGeometry height="50" width="90" x="525" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=16;fontStyle=1;" value="Organização de Dados" vertex="1">
+          <mxGeometry height="220" width="1660" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org1" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Receber&#xa;documentação" vertex="1">
+          <mxGeometry height="50" width="90" x="525" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org2" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Abrir&#xa;documentos" vertex="1">
+          <mxGeometry height="50" width="80" x="640" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org3" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Extrair&#xa;informações" vertex="1">
+          <mxGeometry height="50" width="80" x="745" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org4" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Preencher&#xa;Planilha Mestra" vertex="1">
+          <mxGeometry height="50" width="85" x="850" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org5" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Validar&#xa;dados" vertex="1">
+          <mxGeometry height="50" width="70" x="960" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org6" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Salvar&#xa;planilha" vertex="1">
+          <mxGeometry height="50" width="70" x="1055" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org7" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Arquivar&#xa;documentos" vertex="1">
+          <mxGeometry height="50" width="75" x="1150" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_org8" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Encaminhar planilha&#xa;para Cadastro" vertex="1">
+          <mxGeometry height="50" width="95" x="1250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=16;fontStyle=1;" value="Cadastro" vertex="1">
+          <mxGeometry height="220" width="1660" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad1" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Receber&#xa;Planilha Mestra" vertex="1">
+          <mxGeometry height="50" width="95" x="1250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad2" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Abrir Portal Fake" vertex="1">
+          <mxGeometry height="50" width="90" x="1135" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad3" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Realizar login" vertex="1">
+          <mxGeometry height="50" width="80" x="1030" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad4" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Consultar&#xa;CPF/Nome" vertex="1">
+          <mxGeometry height="50" width="80" x="925" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_cad" parent="lane3" style="rhombus;shape=bpmnGateway;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="Cliente já&#xa;cadastrado?" vertex="1">
+          <mxGeometry height="50" width="55" x="835" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_dup" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Times New Roman;fontSize=8;" value="Registrar como&#xa;&#39;Duplicado&#39;" vertex="1">
+          <mxGeometry height="45" width="95" x="815" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_new" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Preencher&#xa;cadastro" vertex="1">
+          <mxGeometry height="50" width="80" x="720" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_save" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Salvar&#xa;cadastro" vertex="1">
+          <mxGeometry height="50" width="75" x="620" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_upd" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Atualizar status&#xa;na planilha" vertex="1">
+          <mxGeometry height="50" width="85" x="510" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cad_fwd" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Encaminhar&#xa;para o SAC" vertex="1">
+          <mxGeometry height="50" width="85" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane4" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=16;fontStyle=1;" value="SAC" vertex="1">
+          <mxGeometry height="220" width="1660" x="40" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sac1" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Receber status&#xa;do cadastro" vertex="1">
+          <mxGeometry height="50" width="85" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sac2" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Consultar&#xa;Planilha Mestra" vertex="1">
+          <mxGeometry height="50" width="90" x="510" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_sac" parent="lane4" style="rhombus;shape=bpmnGateway;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Times New Roman;fontSize=8;" value="Cadastro com&#xa;sucesso?" vertex="1">
+          <mxGeometry height="50" width="55" x="630" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sac_ok" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Times New Roman;fontSize=8;" value="Enviar e-mail de&#xa;confirmação ao cliente" vertex="1">
+          <mxGeometry height="45" width="105" x="720" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sac_err" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Times New Roman;fontSize=8;" value="Enviar e-mail com&#xa;motivo do erro/dup" vertex="1">
+          <mxGeometry height="45" width="105" x="720" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sac_upd" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Atualizar&#xa;Status_SAC" vertex="1">
+          <mxGeometry height="50" width="80" x="855" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sac_fwd" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Encaminhar dados&#xa;para Relatórios" vertex="1">
+          <mxGeometry height="50" width="95" x="965" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane5" parent="pool1" style="swimlane;html=1;startSize=40;horizontal=0;fillColor=#ffffff;strokeColor=#666666;fontFamily=Times New Roman;fontSize=16;fontStyle=1;" value="Relatórios e Gerência" vertex="1">
+          <mxGeometry height="220" width="1660" x="40" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rel1" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Receber dados&#xa;processados" vertex="1">
+          <mxGeometry height="50" width="95" x="965" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rel2" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Consolidar&#xa;informações" vertex="1">
+          <mxGeometry height="50" width="85" x="1090" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rel3" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Calcular&#xa;indicadores" vertex="1">
+          <mxGeometry height="50" width="80" x="1205" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rel4" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Gerar Relatório&#xa;Gerencial" vertex="1">
+          <mxGeometry height="50" width="90" x="1315" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rel5" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Enviar relatório&#xa;ao gerente" vertex="1">
+          <mxGeometry height="50" width="85" x="1435" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rel6" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;fontSize=8;" value="Gerente analisa&#xa;indicadores" vertex="1">
+          <mxGeometry height="50" width="85" x="1545" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end_rel" parent="lane5" style="ellipse;shape=bpmnEvent;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;fontFamily=Times New Roman;fontSize=8;" value="Fim do&#xa;Processo" vertex="1">
+          <mxGeometry height="35" width="35" x="1570" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at1" edge="1" parent="pool1" source="start1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_at1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at2" edge="1" parent="pool1" source="t_at1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_at2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at3" edge="1" parent="pool1" source="t_at2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gw_at">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at_no" edge="1" parent="pool1" source="gw_at" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Times New Roman;fontSize=8;strokeColor=#b85450;" target="t_at_fail" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at_end" edge="1" parent="pool1" source="t_at_fail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="end_at">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at_yes" edge="1" parent="pool1" source="gw_at" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Times New Roman;fontSize=8;" target="t_at_ok" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at4" edge="1" parent="pool1" source="t_at_ok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_at_fwd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_at_org" edge="1" parent="pool1" source="t_at_fwd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org1" edge="1" parent="pool1" source="t_org1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org2" edge="1" parent="pool1" source="t_org2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org3" edge="1" parent="pool1" source="t_org3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org4" edge="1" parent="pool1" source="t_org4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org5" edge="1" parent="pool1" source="t_org5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org6" edge="1" parent="pool1" source="t_org6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org7" edge="1" parent="pool1" source="t_org7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_org8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_org_cad" edge="1" parent="pool1" source="t_org8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad1" edge="1" parent="pool1" source="t_cad1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad2" edge="1" parent="pool1" source="t_cad2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad3" edge="1" parent="pool1" source="t_cad3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad4" edge="1" parent="pool1" source="t_cad4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gw_cad">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad_yes" edge="1" parent="pool1" source="gw_cad" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Times New Roman;fontSize=8;strokeColor=#b85450;" target="t_cad_dup" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad_dup_upd" edge="1" parent="pool1" source="t_cad_dup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad_upd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad_no" edge="1" parent="pool1" source="gw_cad" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Times New Roman;fontSize=8;" target="t_cad_new" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad5" edge="1" parent="pool1" source="t_cad_new" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad_save">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad6" edge="1" parent="pool1" source="t_cad_save" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad_upd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad7" edge="1" parent="pool1" source="t_cad_upd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_cad_fwd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_cad_sac" edge="1" parent="pool1" source="t_cad_fwd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_sac1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac1" edge="1" parent="pool1" source="t_sac1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_sac2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac2" edge="1" parent="pool1" source="t_sac2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gw_sac">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac_yes" edge="1" parent="pool1" source="gw_sac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Times New Roman;fontSize=8;" target="t_sac_ok" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac_no" edge="1" parent="pool1" source="gw_sac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Times New Roman;fontSize=8;strokeColor=#b85450;" target="t_sac_err" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac_ok_upd" edge="1" parent="pool1" source="t_sac_ok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_sac_upd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac_err_upd" edge="1" parent="pool1" source="t_sac_err" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_sac_upd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac3" edge="1" parent="pool1" source="t_sac_upd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_sac_fwd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sac_rel" edge="1" parent="pool1" source="t_sac_fwd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_rel1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_rel1" edge="1" parent="pool1" source="t_rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_rel2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_rel2" edge="1" parent="pool1" source="t_rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_rel3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_rel3" edge="1" parent="pool1" source="t_rel3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_rel4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_rel4" edge="1" parent="pool1" source="t_rel4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_rel5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_rel5" edge="1" parent="pool1" source="t_rel5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="t_rel6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_rel6" edge="1" parent="pool1" source="t_rel6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="end_rel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
